@@ -12,7 +12,7 @@ const themeChange = () =>{
   if (img1.src.match("image/icon-moon.svg")  ) {
     img1.src = "image/icon-sun.svg";
     document.body.style.backgroundColor= '#25273c';
-    document.body.style.backgroundImage="bg-desktop-light.jpg";
+    document.body.style.backgroundImage="url('image/bg-desktop-dark.jpg')";
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(0 0 0 / 50%)";
     var x= document.getElementsByClassName('lists');
     var i;
@@ -34,8 +34,10 @@ const themeChange = () =>{
 else {
     img1.src = "image/icon-moon.svg";
     document.body.style.backgroundColor='white';
+    document.body.style.backgroundImage="url('image/bg-desktop-light.jpg')";
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(194 195 214 / 50%)";
     var x= document.getElementsByClassName('lists');
+    
     var i;
     for (i = 0; i < x.length; i++) {
       x[i].style.backgroundColor = "white";

@@ -35,6 +35,7 @@ input:focus{
 ul{
     list-style: none;
     display: block;
+    
 }
 
 li{
@@ -51,8 +52,6 @@ li{
     outline-color: #3a7bfd;
     background-color: white;
 }
-
-
 .item-check {
     display: inline-block;
     border-radius: 50%;
@@ -90,6 +89,9 @@ svg{
     position: absolute;
     right: 5%;
 }
+svg:hover{
+    fill: red;
+}
 
 .todo-footer{
     padding: 20px;
@@ -99,6 +101,7 @@ svg{
     background-color:white;
 }
 
+
 .todo-footer>button{
     font-size: 14px;
     font-weight: 700;
@@ -106,4 +109,19 @@ svg{
     border: none;
     padding: 10px;
     color: #777a92;
+}
+.todo-footer>button:focus{
+    color: #3a7bfd;
+}
+@media (min-width:30px)and (max-width:767px) {
+    .todo-footer{
+        padding: 20px;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        background-color:white;
+    }
+    
+    
 }
