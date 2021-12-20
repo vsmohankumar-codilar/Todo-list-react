@@ -1,12 +1,13 @@
-import React,{/* useState,useEffect */} from 'react';
+import React,{useState} from 'react';
 
 import './app.css';
 
 import Form from './form';
 
 function App() {
-
+  const [isActive, setActive] = useState("false");
 const themeChange = () =>{
+  setActive(!isActive);
   var img1=document.getElementById('image');
   
   if (img1.src.match("image/icon-moon.svg")  ) {
@@ -68,7 +69,7 @@ else {
             <img src="image/icon-moon.svg" id="image" onClick={themeChange}/>
             
         </div>
-      <Form/>
+      <Form isActive={isActive} setActive={setActive} />
 
      </div>
    </div>
