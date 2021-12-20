@@ -109,7 +109,7 @@ export default function Form({setActive,isActive}) {
 
 
                 <div className="form-inner"  >
-                    <input type="text" placeholder="Create a new todo..." value={inputData}
+                    <input type="text" className="inputform" placeholder="Create a new todo..." value={inputData}
                         onChange={(e) => {
                             setInputData(e.target.value)
                         }}

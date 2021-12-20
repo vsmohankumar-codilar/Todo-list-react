@@ -11,6 +11,7 @@ const themeChange = () =>{
   var img1=document.getElementById('image');
   
   if (img1.src.match("image/icon-moon.svg")  ) {
+    document.body.querySelector(".inputform").style.color="white";
     img1.src = "image/icon-sun.svg";
     document.body.style.backgroundColor= '#25273c';
     document.body.style.backgroundImage="url('image/bg-desktop-dark.jpg')";
@@ -36,6 +37,7 @@ else {
     img1.src = "image/icon-moon.svg";
     document.body.style.backgroundColor='white';
     document.body.style.backgroundImage="url('image/bg-desktop-light.jpg')";
+    document.body.querySelector(".inputform").style.color="black";
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(194 195 214 / 50%)";
     var x= document.getElementsByClassName('lists');
     
