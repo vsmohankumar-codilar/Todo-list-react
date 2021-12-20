@@ -9,8 +9,8 @@ function App() {
 const themeChange = () =>{
   var img1=document.getElementById('image');
   
-  if (img1.src.match("icon-moon.svg")  ) {
-    img1.src = "icon-sun.svg";
+  if (img1.src.match("image/icon-moon.svg")  ) {
+    img1.src = "image/icon-sun.svg";
     document.body.style.backgroundColor= '#25273c';
     document.body.style.backgroundImage="bg-desktop-light.jpg";
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(0 0 0 / 50%)";
@@ -32,7 +32,7 @@ const themeChange = () =>{
 
 }
 else {
-    img1.src = "icon-moon.svg";
+    img1.src = "image/icon-moon.svg";
     document.body.style.backgroundColor='white';
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(194 195 214 / 50%)";
     var x= document.getElementsByClassName('lists');
@@ -63,7 +63,7 @@ else {
       <div className="header">
             <h1>TODO</h1>
           
-            <img src="icon-moon.svg" id="image" onClick={themeChange}/>
+            <img src="image/icon-moon.svg" id="image" onClick={themeChange}/>
             
         </div>
       <Form/>
